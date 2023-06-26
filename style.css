@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(251, 251, 93);
+}
+
+h1 {
+    text-align: center;
+}
+
+.flexBox {
+    display: flex;
+    align-items: center;
+}
+
+.bg-Dark {
+    background-color: cadetblue;
+}
+
+.bg-light {
+    background-color: lightgrey;
+}
+
+.bg-Brown {
+    background-color: brown;
+}
+
+.bg-green {
+    background-color: green;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+   
+}
+
+.Box {
+    width: 100%;
+    height: 100vh;
+    gap: 30px;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+}
+
+.Box-Rows {
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    gap: 100px;
+}
+
+.Box-Rows .box {
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    display: inline-block;
+    text-align: center;
+    color: brown;
+    font-size: 30px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.Box-Rows .Box-Number {
+    align-self: flex-end;
+    font-weight: bold;
+   
+}
+
+.skewbox{
+    animation-name: skewbox;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes skewbox {
+    0% {
+        transform: skew(-20deg);
+    }
+
+    50% {
+        transform: skew(20deg);
+    }
+
+    100% {
+        transform: skew(-20deg);
+    }
+}
+
+.skewreverse{
+    animation-name: skewboxY;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes skewboxY {
+    0% {
+        transform: skewY(-20deg);
+    }
+
+    50% {
+        transform: skewY(20deg);
+    }
+
+    100% {
+        transform: skewY(-20deg);
+    }
+}
+
+.rotatebox {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.scaleboxY {
+    animation: scaleboxY infinite 3s ease;
+}
+
+@keyframes scaleboxY{
+    0% {
+        transform: scaley(0.5);
+    }
+
+    50% {
+        transform: scaley(1);
+    }
+
+    100% {
+        transform: scaley(0.5);
+    }
+}
+
+.scaleboxX {
+    animation: scaleboxX infinite 3s ease;
+}
+
+@keyframes scaleboxX {
+    0% {
+        transform: scalex(0.5);
+    }
+
+    50% {
+        transform: scalex(1);
+    }
+
+    100% {
+        transform: scalex(0.5);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(100deg);
+    }
+    
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(100deg);
+    }
+}
+
+body {
+    background-color: rgb(251, 251, 93);
+}
+
+h1 {
+    text-align: center;
+}
+
+.Container {
+    justify-content: center;
+    font-weight: bold;
+    width: 80%;
+}
+ol{
+    margin-left: 300px;
+}
+
+
+ol li {
+    margin-top: 10px;
+}
+
+.box {
+    background-color: rgb(67, 209, 67);
+    width: 100px;
+    height: 100px;
+    Transition-property: width;
+}
+
+.box:hover {
+    width: 300px;
+}
+
+
+.Box-1 {
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+.Box-2 {
+    Transition-property: width, height;
+    transition-duration: 2s,3s;
+    transition-timing-function: ease-out;
+}
+
+.Box-2:hover {
+    width: 250px;
+    height: 300px;
+}
+
+.Box-3 {
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.Box-4 {
+    transition-duration: 1.5s;
+    transition-timing-function: linear;
+}
+
+
+.Box-5 {
+    transition-duration: 2.5s;
+    transition-timing-function: ease;
+}
+
+
+.Box-6 {
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+
+.Box-7 {
+    transition-duration: 3.5s;
+}
+
+a {
+    font-size: 30px;
+    display: block;
+    font-weight: bold;
+    text-align: center; 
+}
+
+#BackBtn {
+    color: brown;
+}
+
+#NextBtn {
+    color: blue;
+}
+
+.Sky {
+    position: relative;
+    height: 95vh;
+    border: 12px solid;
+    border-color: white green white orange;
+    background-image: url(./sky.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+.uppertext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    gap: 10px;
+}
+
+.uppertext p {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.uppertext .firstword {
+    background-color: orange;
+}
+
+.uppertext.secondword {
+    background-color: white;
+
+}
+
+.uppertext .thirdword {
+    background-color: green;
+}
+
+.sun {
+    position: absolute;
+    width: 80px;
+    top: 50px;
+    left: 90%;
+    z-index: 2;
+    animation: sunmove 180s linear infinite;
+}
+
+@keyframes sunmove {
+    100% {
+        transform: translate(-1200px);
+    }
+
+}
+
+.Road {
+    position: absolute;
+    background-image: url(./road.jpg);
+    width: 500%;
+    height: 205px;
+    bottom: 0;
+    z-index: 3;
+    animation: moveobject 4s linear infinite;
+}
+
+@keyframes moveobject {
+    100% {
+        transform: translate(-3000px);
+    }
+
+}
+
+.City {
+    position: absolute;
+    background-image: url(./city.png);
+    width: 500%;
+    height: 200px;
+    bottom: 205px;
+    z-index: 4;
+    animation: moveobject 20s linear infinite;
+}
+
+.Car {
+    position: absolute;
+    width: 400px;
+    bottom: 115px;
+    left: 516px;
+    z-index: 5;
+}
+
+.Wheel {
+    position: absolute;
+    width: 70px;
+    bottom: 120px;
+    animation: rotationobject 1.5s linear infinite;
+}
+
+.Left {
+    left: 552.5px;
+    z-index: 6;
+}
+
+.Right {
+    left: 797.5px;
+    z-index: 7;
+}
+
+@keyframes rotationobject {
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.IndianFlag {
+    position: absolute;
+    z-index: 8;
+    height: 90px;
+    bottom: 205px;
+    left: 800px;
+}
+
+
+
+
+
+
+
+
